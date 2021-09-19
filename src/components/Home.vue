@@ -1,8 +1,12 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
+    <h1>Elko to stronka do wypelniania spz</h1>
   </div>
+  <router-link to='/login'>Log In</router-link> |
+  <router-link to='/register'>Register</router-link>
 </template>
 
 <script>
 </script>
+
+<style scoped src="../styles/homestyle.css"></style>
