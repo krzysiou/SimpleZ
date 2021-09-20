@@ -82,6 +82,20 @@ input {
 	width: 100%;
 }
 
+.error-message {
+	position: absolute;
+	color: red;
+	font-size: 18px;
+}
+
+.error-left {
+	top: 10%;
+}
+
+.error-right {
+	top: 10%;
+}
+
 .outer-container {
 	display: flex;
 	align-items: center;
