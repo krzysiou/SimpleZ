@@ -1,14 +1,5 @@
-.nav {
-  height: 25px;
-  width: 300px;
-  border-radius: 0 0 10px 10px;
-  background-color: rgba(0,0,0,0.8);
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
 #app {
+  position: absolute;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
