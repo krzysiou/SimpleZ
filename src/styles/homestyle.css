@@ -56,12 +56,12 @@ a:hover {
 	background-size: cover;
 	background-position: 0 0;
 	color: #FFFFFF;
-  height: 70%;
+  height: 60%;
   top: 0;
 }
 
 .overlay-bottom {
   position: absolute;
-  height: 30%;
-  top: 70%;
+  height: 40%;
+  top: 60%;
 }

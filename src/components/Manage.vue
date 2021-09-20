@@ -2,20 +2,22 @@
 	<div class="outer-container">
 		<div class="container" id="container">
 			<div class="form-container sign-up-container">
-				<form action="#">
+				<form>
 					<h1>Sign Up</h1>
 					<input type="text" placeholder="Name" />
 					<input type="email" placeholder="Email" />
 					<input type="password" placeholder="Password" />
 					<button>Register</button>
+					<router-link to="/" class="exit">Home</router-link>
 				</form>
 			</div>
 			<div class="form-container sign-in-container">
-				<form action="#">
+				<form>
 					<h1>Sign in</h1>
 					<input type="email" placeholder="Email" />
 					<input type="password" placeholder="Password" />
 					<button>Log In</button>
+					<router-link to="/" class="exit">Home</router-link>
 				</form>
 			</div>
 			<div class="overlay-container">

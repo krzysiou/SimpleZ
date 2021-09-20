@@ -171,7 +171,33 @@ input {
 	right: 0;
 }
 
+.exit {
+	color: #FFFFFF;
+	background-color: #03b995;
+	border-radius: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	width: 80px;
+	height: 40px;
+	z-index: 100;
+	margin-bottom: -40px;
+	transition: 0.2s ease-in;
+}
+
+.exit:hover{
+	background-color: #009c7d;
+}
+
 #signUp {
 	margin-top: 40px;
-	margin-bottom: -15px;
+}
+
+#signIn {
+	margin-bottom: 10px;
 }
