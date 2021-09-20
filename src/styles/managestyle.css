@@ -27,6 +27,7 @@ a {
 }
 
 button {
+	margin-top: 10px;
 	border-radius: 20px;
 	border: 1px solid #03b995;
 	background-color: #03b995;
@@ -36,7 +37,11 @@ button {
 	padding: 12px 45px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	transition: transform 80ms ease-in;
+	transition: 0.2s ease-in;
+}
+
+button:hover {
+	background-color: #009c7d;
 }
 
 button:active {
@@ -50,6 +55,11 @@ button:focus {
 button.ghost {
 	background-color: transparent;
 	border-color: #FFFFFF;
+	transition: 0.2 ease-in;
+}
+
+button.ghost:hover {
+	background-color: rgba(255, 255, 255, 0.096);
 }
 
 form {
@@ -162,6 +172,6 @@ input {
 }
 
 #signUp {
-	margin-top: 20px;
-	margin-bottom: -22px;
+	margin-top: 40px;
+	margin-bottom: -15px;
 }

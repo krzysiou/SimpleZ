@@ -26,7 +26,7 @@
 						<button class="ghost" id="signIn">Log In</button>
 					</div>
 					<div class="overlay-panel overlay-right">
-						<h1>Welcome to SimpleZ</h1>
+						<h1>Don't have an account?</h1>
 						<p>Create your account and get access to main features.</p>
 						<button class="ghost" id="signUp">Register</button>
 					</div>
