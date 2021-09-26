@@ -71,7 +71,7 @@ export default {
             })
 						setCookie('accessToken', response.data.accessToken, 1)
             if(response.data.id){
-            location.replace("http://localhost:8080/#/users/"+response.data.id)
+            location.replace("http://localhost:8080/#/users/")
             }
         } catch (error) {
             this.errorR = error.response.data.error
@@ -89,7 +89,7 @@ export default {
             })
             setCookie('accessToken', response.data.accessToken, 1)
             if(response.data.id){
-            location.replace("http://localhost:8080/#/users/"+response.data.id)
+            location.replace("http://localhost:8080/#/users/")
             }
         } catch(error) {
             this.errorL = error.response.data.error
