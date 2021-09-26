@@ -1,19 +1,20 @@
 <template>
-<div class="container">
-  <nav>
-    <router-link to="/users/files/create">Create File</router-link>
-    <router-link to="/users/files">Files</router-link>
-    <router-link to="/users" >Home</router-link>
-    <router-link to="/manage" @click="logout()">Log Out</router-link>
-  </nav>
-  <div class="welcome">
-    <h1>Hello {{ name }}!</h1>
-    <p>Navigate the tabs above to create or view files.</p>
+  <div class="container">
+    <div class="navbar">
+      <button type="button">
+        <img src="../assets/add.svg" alt="add">
+      </button>
+      <button type="button">
+        <img src="../assets/profile.svg" alt="profile">
+      </button>
+      <button type="button">
+        <img src="../assets/logout.svg" alt="logout" @click="logout()">
+      </button>
+    </div>
+    <div class="inner-container">
+
+    </div>
   </div>
-  <div class="inner-container">
-    <router-view/>
-  </div>
-</div>
 </template>
 
 <script>
@@ -36,8 +37,9 @@ export default {
   },
 	methods: {
 		logout: function() {
+      location.replace("http://localhost:8080/#/manage")
       deleteCookie('accessToken')
-    },
+    }
 	}
 }
 

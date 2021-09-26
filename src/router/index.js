@@ -4,8 +4,6 @@ import jwt from 'jsonwebtoken'
 import Manage from '../components/Manage.vue'
 import Home from '../components/Home.vue'
 import Account from '../components/Account.vue'
-import Files from '../components/Files.vue'
-import CreateFile from '../components/CreateFile.vue'
 
 const routes = [
   {
@@ -19,7 +17,7 @@ const routes = [
       //check token
       const token = getCookie("accessToken")
       if(token){
-        next('/users/')
+        next('/users/'+jwt.decode(token).id)
       } else {
         next()
       }
@@ -28,19 +26,9 @@ const routes = [
     component: Manage
   },
   {
-    path: '/users/',
+    path: '/users/:id',
     name: 'Account',
     component: Account,
-    children: [
-      {
-        path: 'files',
-        component: Files
-      },
-      {
-        path: 'files/create',
-        component: CreateFile
-      }
-    ]
   },
 ]
 
