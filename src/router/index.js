@@ -5,6 +5,7 @@ import Manage from '../components/Manage.vue'
 import Home from '../components/Home.vue'
 import Account from '../components/Account.vue'
 import CreateFile from '../components/CreateFile.vue'
+import EditFile from '../components/EditFile.vue'
 
 const routes = [
   {
@@ -35,6 +36,11 @@ const routes = [
     path: '/users/:id/files/create',
     name: 'CreateFile',
     component: CreateFile,
+  },
+  {
+    path: '/users/:userId/files/edit/:fileId',
+    name: 'EditFile',
+    component: EditFile,
   }
 ]
 
