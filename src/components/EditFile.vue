@@ -1,7 +1,5 @@
 <template>
   <h5>{{ error }}</h5>
-  <div class="container">
-
     <div class="main-info inner-container">
       <form>
         <p>Info</p>
@@ -55,10 +53,10 @@
         </ul>
       </form>
     </div>
-    <button type="button" class="button" @click="returnToAccount()">Return</button>
-    <button type="button" class="button" @click="submit()">Update</button>
-
-  </div>
+    <div class="buttons">
+      <button type="button" class="button" @click="returnToAccount()">Return</button>
+      <button type="button" class="button" @click="submit()">Update</button>
+    </div>
 </template>
 
 <script>
@@ -220,4 +218,4 @@ export default {
 
 </script>
 
-<style scoped src="../styles/createfilestyle.css"></style>
+<style scoped src="../styles/editfilestyle.css"></style>
