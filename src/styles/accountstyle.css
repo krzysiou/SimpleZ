@@ -10,21 +10,28 @@
 }
 
 .navbar {
+	margin-top: 5%;
 	display: flex;
-	width: 50%;
+	height: 60px;
+	align-items: center;
 	justify-content: space-around;
 	margin-bottom: 20px;
+	width: 30rem;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #fff;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 button {
-	margin-top: 10px;
-	border-radius: 30px;
+	border-radius: 20px;
 	border: 1px solid #03b995;
 	background-color: #03b995;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
-	padding: 25px 30px;
+	padding: 5px 10px;
+	width: 12rem;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	transition: 0.2s ease-in;
@@ -34,15 +41,81 @@ button:hover {
 	background-color: #009c7d;
 }
 
+button.ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
+	width: 12rem;
+	transition: 0.2 ease-in;
+}
+
+button.ghost:hover {
+	background-color: rgba(255, 255, 255, 0.096);
+}
+
 .inner-container {
 	position: relative;
-	top: 5%;
-	display:flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 80%;
-	min-height: 100px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	overflow: hidden;
+	justify-content: space-around;
+	margin: 15px 0;
+	width: 100rem;
+	height: 130px;
 	border-radius: 10px;
 	background-color: #fff;
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+li {
+	width: 33%
+}
+
+.name	{
+	width: 30%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.date	{
+	width: 30%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.task-bar {
+	width: 40%;
+	height: 100%;
+	color: #fff;
+	padding: 0 20px;
+	font-weight: 300;
+	border-radius: 0px 10px 10px 0px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: rgb(3,185,149);
+	background: linear-gradient(31deg, rgba(3,185,149,1) 0%, rgba(68,202,208,1) 58%, rgba(29,225,241,1) 100%);
+	background-repeat: no-repeat;
+}
+
+.file-name {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 28px;
+}
+
+.file-date {
+	font-size: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+ul {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
 }

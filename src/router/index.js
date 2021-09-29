@@ -4,6 +4,7 @@ import jwt from 'jsonwebtoken'
 import Manage from '../components/Manage.vue'
 import Home from '../components/Home.vue'
 import Account from '../components/Account.vue'
+import CreateFile from '../components/CreateFile.vue'
 
 const routes = [
   {
@@ -30,6 +31,11 @@ const routes = [
     name: 'Account',
     component: Account,
   },
+  {
+    path: '/users/:id/files/create',
+    name: 'CreateFile',
+    component: CreateFile,
+  }
 ]
 
 const router = createRouter({
