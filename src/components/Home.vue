@@ -11,8 +11,8 @@
             <router-link to="/manage">Get Started</router-link>
 					</div>
 				</div>
-			</div>
 		</div>
+	</div>
 </template>
 
 <script>
