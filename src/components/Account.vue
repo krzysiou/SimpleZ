@@ -22,7 +22,7 @@
       <div class="task-bar">
         <ul>
           <li>
-            <button type="button" class="ghost">
+            <button type="button" class="ghost" @click="downloadFile(file.id)">
               <p>Download</p>
             </button>
           </li>
@@ -43,7 +43,6 @@
 </template>
 
 <script>
-
 import { deleteCookie, getCookie } from '../utils/cookies';
 const axios = require('axios')
 
@@ -85,7 +84,7 @@ export default {
       const element = document.getElementById(fileId)
       element.style.display = 'none';
       try {
-        const response = await axios.post('http://localhost:3000/users/files/delete', {
+        await axios.post('http://localhost:3000/users/files/delete', {
           fileId: fileId
         }, 
         {
@@ -100,6 +99,10 @@ export default {
     editFile: async function(fileId) {
       const userId = window.location.href.split("/")[5]
       location.replace("http://localhost:8080/#/users/"+userId+"/files/edit/"+fileId)
+    },
+    downloadFile: function(fileId) {
+      const userId = window.location.href.split("/")[5]
+      location.replace("http://localhost:8080/#/users/"+userId+"/files/download/"+fileId)
     }
 	}
 }

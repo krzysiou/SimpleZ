@@ -149,7 +149,7 @@ export default {
       }
 
       try {
-        const response = await axios.post('http://localhost:3000/users/files/create', {
+        await axios.post('http://localhost:3000/users/files/create', {
           file: file
         }, {
           headers: {

@@ -62,7 +62,6 @@
 <script>
 
 const axios = require('axios')
-const { uuid } = require('uuidv4');
 const { getCookie } = require('../utils/cookies')
 
 export default {
@@ -201,7 +200,7 @@ export default {
       }
 
       try {
-        const response = await axios.patch('http://localhost:3000/users/files/edit', {
+        await axios.patch('http://localhost:3000/users/files/edit', {
           file: file
         }, {
           headers: {

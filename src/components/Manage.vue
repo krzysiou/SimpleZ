@@ -113,7 +113,7 @@ export default {
     });
 
     signInButton.addEventListener('click', () => {
-    	container.classList.remove("right-panel-active");
+			container.classList.remove("right-panel-active");
 			//clear inputs
 			setTimeout(function () {
 				document.getElementById("nameR").value = ''

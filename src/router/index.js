@@ -6,6 +6,7 @@ import Home from '../components/Home.vue'
 import Account from '../components/Account.vue'
 import CreateFile from '../components/CreateFile.vue'
 import EditFile from '../components/EditFile.vue'
+import DownloadFile from '../components/DownloadFile.vue'
 
 const routes = [
   {
@@ -41,7 +42,12 @@ const routes = [
     path: '/users/:userId/files/edit/:fileId',
     name: 'EditFile',
     component: EditFile,
-  }
+  },
+  {
+    path: '/users/:userId/files/download/:fileId',
+    name: 'EditFile',
+    component: DownloadFile,
+  },
 ]
 
 const router = createRouter({
