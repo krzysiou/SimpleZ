@@ -45,7 +45,7 @@ const routes = [
   },
   {
     path: '/users/:userId/files/download/:fileId',
-    name: 'EditFile',
+    name: 'DownloadFile',
     component: DownloadFile,
   },
 ]
