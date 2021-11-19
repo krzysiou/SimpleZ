@@ -59,6 +59,7 @@ td{
 }
 
 .date{
+	text-align: right;
 	font-size: 12px;
 	width: 30%;
 }

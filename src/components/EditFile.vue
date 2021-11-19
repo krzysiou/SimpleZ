@@ -150,9 +150,27 @@ export default {
       const numberSide = document.getElementById("numberSide").value
 
       const today = new Date();
-      const date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+      const date = today.getDate()+'.'+(today.getMonth()+1)+'.'+today.getFullYear();
+
+      let ectsSum = 0
+      let hoursSum = 0
 
       for(let i = 0; i < parseInt(document.getElementById("numberMain").value); i++){
+
+        if(parseInt(document.getElementById("ectsMain"+(i+1)).value) <= 15 || parseInt(document.getElementById("ectsMain"+(i+1)).value) >= 0){
+          ectsSum += parseInt(document.getElementById("ectsMain"+(i+1)).value)
+        }
+        let temp = document.getElementById("wclpsMain"+(i+1)).value.split(/[/, ]/)
+        if(temp.length === 5 || temp.length === 2){
+          if(temp.length === 5){
+            for(let i=0; i < temp.length; i++){
+              hoursSum += parseInt(temp[i])
+            }
+          } else {
+            hoursSum += parseInt(temp[1])
+          }
+        }
+
         const subjectMain = {
           name: document.getElementById("userMainSubjectName"+(i+1)).value,
           wclps: document.getElementById("wclpsMain"+(i+1)).value,
@@ -162,6 +180,21 @@ export default {
       }
 
       for(let i = 0; i < parseInt(document.getElementById("numberSide").value); i++){
+
+        if(parseInt(document.getElementById("ectsSide"+(i+1)).value) <= 15 || parseInt(document.getElementById("ectsSide"+(i+1)).value) >= 0){
+          ectsSum += parseInt(document.getElementById("ectsSide"+(i+1)).value)
+        }
+        let temp = document.getElementById("wclpsSide"+(i+1)).value.split(/[/, ]/)
+        if(temp.length === 5 || temp.length === 2){
+          if(temp.length === 5){
+            for(let i=0; i < temp.length; i++){
+              hoursSum += parseInt(temp[i])
+            }
+          } else {
+            hoursSum += parseInt(temp[1])
+          }
+        }
+
         const subjectSide = {
           name: document.getElementById("userSideSubjectName"+(i+1)).value,
           wclps: document.getElementById("wclpsSide"+(i+1)).value,
@@ -176,6 +209,8 @@ export default {
         id: fileId,
         name: document.getElementById("fileName").value,
         date: date,
+        sumEcts: String(ectsSum),
+        sumHours: String(hoursSum),
         info: {
           name: document.getElementById("userName").value,
           surname: document.getElementById("userSurname").value,
