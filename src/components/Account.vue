@@ -102,7 +102,7 @@ export default {
     },
     downloadFile: function(fileId) {
       const userId = window.location.href.split("/")[5]
-      location.replace("http://localhost:8080/#/users/"+userId+"/files/download/"+fileId)
+      window.open("http://localhost:8080/#/users/"+userId+"/files/download/"+fileId, "_blank")
     }
 	}
 }
