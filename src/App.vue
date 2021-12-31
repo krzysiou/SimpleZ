@@ -2,4 +2,4 @@
   <router-view/>
 </template>
 
-<style src="./styles/appstyle.css"></style>
+<style src="./styles/AppStyle.css"></style>
