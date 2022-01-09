@@ -39,3 +39,7 @@ This page contains a large form that will allow server to generate a file and pd
 ![Zrzut ekranu 2022-01-8 o 23 36 08](https://user-images.githubusercontent.com/60892747/148663094-0ac66893-639c-4ee4-8541-f2bd1a4681b3.png)
 
 After hitting the download button you will be presented with a generated ```PDF``` file which then will be automatically downloaded and saved on your computer. It contains all of the gathered info with some extra features like summed up ects points and hours. This file is ready to be sent to your deans office. It saves your time by automating the whole process of filling papers and messing with right pagination of file. There are no differences when compared to hand-made paper sent to my dean during first term.
+
+## Debugging
+
+If something does not work properly start your debug process by deleting cookies provided by localhost.
