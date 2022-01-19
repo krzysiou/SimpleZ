@@ -17,7 +17,7 @@
    </div>
    <div class="main">
      <div class="dean-signature">
-       <h4>Prodziekan ds. studenckich<br>dr inż. Katarzyna MATUSIAK</h4>
+       <h4>Prodziekan ds. studenckich<br>dr inż. John Doe</h4>
      </div>
      <div class="message">
        <p>Proszę o wpisanie mnie na <b>{{ term }}</b> semestr studiów w roku akademickim <b>{{ year }}</b> oraz zatwierdzenie poniszego semestralnego planu zajęć.</p>
