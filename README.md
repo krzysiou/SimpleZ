@@ -7,7 +7,7 @@ Website developed to help my friends fill and send university related papers. It
 - VueRouter
 - Axios
 - Cookies
-- JWT token
+- JWT
 
 ## Website setup
 For starters install all modules using ```npm install```. And start hosting the website by typing ```npm run serve```, after few seconds just simply hit on one of two links displayed in your command prompt and enjoy cruising my website. It is important to notice that for cruicial features of the site you will need a serverside backend that i developed [here](https://github.com/krzysiou/SimpleZ-api) just follow the guide there to setup server for our website.
