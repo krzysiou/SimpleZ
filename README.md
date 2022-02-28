@@ -1,6 +1,13 @@
 # SimpleZ
 Website developed to help my friends fill and send university related papers. It gathers data via many forms and creates a pdf file containing ready-to-send document. It heavily relies on vue framework with javascript. The idea came to me when at the end of second term me and many others students like me had to resend said papers many times before they were accepted by the dean.
 
+## Technologies
+
+- Vue
+- VueRouter
+- Axios
+- JWT token
+
 ## Website setup
 For starters install all modules using ```npm install```. And start hosting the website by typing ```npm run serve```, after few seconds just simply hit on one of two links displayed in your command prompt and enjoy cruising my website. It is important to notice that for cruicial features of the site you will need a serverside backend that i developed [here](https://github.com/krzysiou/SimpleZ-api) just follow the guide there to setup server for our website.
 
