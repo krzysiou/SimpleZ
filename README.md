@@ -6,6 +6,7 @@ Website developed to help my friends fill and send university related papers. It
 - Vue
 - VueRouter
 - Axios
+- Cookies
 - JWT token
 
 ## Website setup
